@@ -67,7 +67,6 @@ img{
 .row{
     float: left;
     width: 100%;
-    margin-bottom: 100px;
 }
 
 .loadmore{
@@ -336,6 +335,52 @@ img{
     margin-bottom: 20px;
 }
 
+/* PARALLAX
+------------------------------------------------------*/
+.parallax{
+    float: left;
+    width: 100%;
+    margin: 60px 0;
+    font-size: 23px;
+    background-image: url('../images/bg-paralax.jpg');
+    text-align: center;
+    padding: 160px 0;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+
+}
+
+.parallax h1{
+    font-size: 38px;
+    margin-bottom: 10px;
+}
+
+.parallax button{
+    background: #f9014d;
+    font-size: 20px;
+    color: #fff;
+    padding: 10px 5px;
+    margin-top: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    cursor: pointer;
+    transition: all .4s ease-in-out; 
+
+}
+
+.parallax button:hover{
+    background: #e92863;
+}
+
+/* DESTAQUES
+------------------------------------------------------*/
+.destaques-col{
+    margin-bottom: 20px;    
+}
+
 /* BREAKPOINTS MÍNIMOS
 ------------------------------------------------------*/
 @media(min-width:768px){
@@ -392,6 +437,19 @@ img{
 
     .destinos-col:first-child{
         width: 100%;
+    }
+
+    /* DESTAQUES */
+    .destaques-col{
+        width: 49%;
+        margin-right: 2%;
+        float: left;
+        margin-bottom: 2%;
+    }
+
+    /* De dois em dois elementos zera */
+    .destaques-col:nth-of-type(2n+0){
+        margin-right: 0;
     }
 }
 
